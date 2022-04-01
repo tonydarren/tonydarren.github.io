@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>4月，我的第一篇博客</title>
+    <link href="/2022/04/02/4%E6%9C%88%EF%BC%8C%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2022/04/02/4%E6%9C%88%EF%BC%8C%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="SHORTCUTS"><a href="#SHORTCUTS" class="headerlink" title="SHORTCUTS"></a>SHORTCUTS</h2><p>hexo init 建站<br>hexo g 生成<br>hexo clean 清除<br>hexo s 启动hexo<br>hexo d 部署至github<br>git clone ‘website’.git themes&#x2F;‘folder’   克隆主题<br>cd\ 返回根目录<br>cd.. 返回上一层<br>dir 显示当前文件夹内容 #mac上是ls<br>‘atom’ ‘filename’ 用指定editor去编辑文件<br>    比如_config.yml这个文件是基础设置</p><hr><h2 id="Chapter-1-3月回顾"><a href="#Chapter-1-3月回顾" class="headerlink" title="Chapter 1 3月回顾"></a>Chapter 1 3月回顾</h2><ol><li>出现类似以下bug不影响使用，和软件开发者相关，参见本文<a href="https://www.haoyizebo.com/posts/710984d0/">https://www.haoyizebo.com/posts/710984d0/</a>及<a href="https://juejin.cn/post/7003301549359235086">https://juejin.cn/post/7003301549359235086</a><br> (node:18440) Warning: Accessing non-existent property ‘lineno’ of module exports inside circular dependency<br> (Use <code>node --trace-warnings ...</code> to show where the warning was created)<br> (node:18440) Warning: Accessing non-existent property ‘column’ of module exports inside circular dependency<br> (node:18440) Warning: Accessing non-existent property ‘filename’ of module exports inside circular dependency<br> (node:18440) Warning: Accessing non-existent property ‘lineno’ of module exports inside circular dependency<br> (node:18440) Warning: Accessing non-existent property ‘column’ of module exports inside circular dependency<br> (node:18440) Warning: Accessing non-existent property ‘filename’ of module exports inside circular dependency</li></ol><hr><h2 id="Chapter-2-4月规划"><a href="#Chapter-2-4月规划" class="headerlink" title="Chapter 2 4月规划"></a>Chapter 2 4月规划</h2><ol><li>HEXO换一个主题<br> 1）codesheep推荐 <a href="https://github.com/litten/hexo-theme-yilia">https://github.com/litten/hexo-theme-yilia</a></li></ol><hr><h2 id="域名更换"><a href="#域名更换" class="headerlink" title="域名更换"></a>域名更换</h2><ol><li>打开hexo目录下的_config.yml文件，找到URL，将其更换</li><li>在 hexo&#x2F;source 目录下新建 CNAME 文件，并向其中加入自己域名，不要带www.<br> 可以先新建txt再删除后缀</li><li>解析域名。添加两条解析记录<br> 1）www CNAME 默认 你的项目地址，如name.github.io<br> 2）@ A 默认 ipv4地址 在cmd里输入ping name.github.io</li><li>在GitHub项目设置中自定义域名<br> 进入你的项目 - Settings - Pages - Custom domain</li></ol><hr><h2 id="致谢"><a href="#致谢" class="headerlink" title="致谢"></a>致谢</h2><p>总规<br>    <a href="https://www.bilibili.com/medialist/play/watchlater/BV1Yb411a7ty">https://www.bilibili.com/medialist/play/watchlater/BV1Yb411a7ty</a><br>域名<br>    <a href="https://zhuanlan.zhihu.com/p/54575457">https://zhuanlan.zhihu.com/p/54575457</a></p><hr>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2022/04/02/hello-world/"/>
+    <url>/2022/04/02/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
