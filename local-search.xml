@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>Windows必备软件</title>
+    <link href="/2022/04/04/%E5%9F%BA%E7%A1%80%E8%BD%AF%E4%BB%B6/"/>
+    <url>/2022/04/04/%E5%9F%BA%E7%A1%80%E8%BD%AF%E4%BB%B6/</url>
+    
+    <content type="html"><![CDATA[<h1 id="IDM"><a href="#IDM" class="headerlink" title="IDM"></a>IDM</h1><p>全称Internet Download Manager</p><h1 id="DeskGo"><a href="#DeskGo" class="headerlink" title="DeskGo"></a>DeskGo</h1><p>腾讯出品少有的良心软件，界面清爽，运行稳定。特别是全局搜索功能，反馈速度很快。</p><h1 id="Geek-Uninstaller"><a href="#Geek-Uninstaller" class="headerlink" title="Geek Uninstaller"></a>Geek Uninstaller</h1><p>简洁高效，自动查找残留文件。<br>#TBD</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Windows</tag>
+      
+      <tag>必备软件</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>快捷键大全</title>
     <link href="/2022/04/03/shortcuts/"/>
     <url>/2022/04/03/shortcuts/</url>
@@ -14,7 +35,11 @@
     
     <tags>
       
-      <tag>基础知识</tag>
+      <tag>快捷键</tag>
+      
+      <tag>Markdown</tag>
+      
+      <tag>Hexo</tag>
       
     </tags>
     
