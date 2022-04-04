@@ -193,6 +193,46 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2022/04/04/%E7%BB%99Fluid%E6%B7%BB%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4%E5%B0%BE%E6%A0%87/" target="_self">
+          给Fluid添加运行时间尾标
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/04/04/%E7%BB%99Fluid%E6%B7%BB%E5%8A%A0%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4%E5%B0%BE%E6%A0%87/" target="_self">
+          
+          为Fluid模板添加运行时间尾标时间计算代码源自网络，点此直达。最近学业繁忙，先记下简单步骤，这几天有时间尝试贡献到github社区。本人并非编程专业，只是刚开始接触的爱好者，如有纰漏请多多指正。 1. 在\themes\fluid\layout\_partial路径下创建timer.ejs文件，将代码复制进去。1234567891011121314151617181920212223242526
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-04-04 22:39" pubdate>
+              2022-04-04
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/Hexo/">Hexo</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2022/04/04/%E5%9F%BA%E7%A1%80%E8%BD%AF%E4%BB%B6/" target="_self">
           Windows必备软件
         </a>
@@ -387,6 +427,50 @@
   <div class="footer-content">
      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Theme-Fluid</span></a> 
   </div>
+  <div class="timer">
+      <!-- source:xian6ge.cn Revised：chifengduijia.com -->
+      <div class="timer">
+<span id="sitetime"></span>
+<script language=javascript>
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth()+1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /*
+        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数
+        source:xian6ge.cn Revised：chifengduijia.com
+        */
+        var t1 = Date.UTC(2022,04,02,00,18,13); //北京时间2018-2-13 00:00:00
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+        var diff = t2-t1;
+        var diffYears = Math.floor(diff/years);
+        var diffDays = Math.floor((diff/days)-diffYears*365);
+        var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+        var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+        var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+        document.getElementById("sitetime").innerHTML=" 已运行 "+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+    }
+    siteTime();
+</script>
+
+  </div>
   
   <div class="statistics">
     
@@ -411,7 +495,6 @@
       
 
     
-  </div>
 
 
   
